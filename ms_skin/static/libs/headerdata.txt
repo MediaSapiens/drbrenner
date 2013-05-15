@@ -1,0 +1,31 @@
+# and finally include the awesome modernizr script for adding html5-support for older browsers and feature detection
+# this should be the only call <script>-Tag in your head -- adding this in the head for better rendering
+#page.headerData.99 >
+#page.headerData.99 = TEXT
+#page.headerData.99 {
+#  insertData = 1
+#  data = PATH:EXT:ms_skin/js/modernizr-2.6.2.min.js
+#  wrap = <script src="|"></script>
+#}
+page.headerData{
+  10 = TEXT
+  10.value(
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel='stylesheet' type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic'>
+      <link rel="stylesheet" href="{$skin_path}layout/public/styles/bootstrap.min.css">
+      <link rel="stylesheet" href="{$skin_path}layout/public/styles/bootstrap-responsive.min.css">
+      <link rel="stylesheet" href="{$skin_path}layout/public/styles/flexslider.css">
+      <link rel="stylesheet" href="{$skin_path}layout/public/styles/main.css">
+      <!--[if lt IE 9]>
+      <script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script type="text/javascript" src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+      <link rel="stylesheet" type="text/css" href="{$skin_path}layout/public/styles/ie.css" />
+      <![endif]-->
+      <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+      <script>window.jQuery || document.write('<script src="{$skin_path}layout/public/scripts/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="{$skin_path}layout/public/scripts/bootstrap.min.js"></script>
+      <script src="{$skin_path}layout/public/scripts/jquery.flexslider-min.js"></script>
+      <script src="{$skin_path}layout/public/scripts/main.js"></script>
+  )
+}

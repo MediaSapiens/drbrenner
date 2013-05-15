@@ -1,0 +1,32 @@
+<T3DataStructure>
+  <meta>
+    <langDisable>1</langDisable>
+  </meta>
+
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms>
+          <sheetTitle>LLL:EXT:ms_slider/Resources/Private/Language/locallang_db.xlf:flexfForm.Settings</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <switchableControllerActions>
+            <TCEforms>
+              <label>LLL:EXT:ms_slider/Resources/Private/Language/locallang_db.xlf:flexfForm.WhatDisplay</label>
+              <config>
+                <type>select</type>
+                <items>
+                  <numIndex index="0">
+                    <numIndex index="0">Slider</numIndex>
+                    <numIndex index="1">slider->list</numIndex>
+                  </numIndex>
+                </items>
+              </config>
+            </TCEforms>
+          </switchableControllerActions>
+        </el>
+      </ROOT>
+    </sDEF>
+  </sheets>
+</T3DataStructure>

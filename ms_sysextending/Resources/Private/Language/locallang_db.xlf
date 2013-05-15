@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-04-21T14:23:05Z" product-name="ms_sysextending">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_mssysextending_domain_model_pageextend">
+				<source>Page Extend</source>
+			</trans-unit>
+			<trans-unit id="tx_mssysextending_domain_model_pageextend.herotitle">
+				<source>Herotitle</source>
+			</trans-unit>
+			<trans-unit id="tx_mssysextending_domain_model_pageextend.heroimage">
+				<source>Heroimage</source>
+			</trans-unit>
+			
+			<trans-unit id="pages.tx_extbase_type.Tx_MsSysextending_PageExtend">
+				<source>ms_sysextending PageExtend</source>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

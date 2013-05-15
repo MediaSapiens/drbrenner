@@ -1,0 +1,8 @@
+TCEFORM.tt_content.tx_gridelements_backend_layout {
+  removeChildrenFromList = 1
+}
+
+mod.SHARED{
+	defaultLanguageFlag=de.gif
+	defaultLanguageLabel=Deutsch
+}

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/TYPO3v4/CoreProjects/!svn/ver/4476/gridelements/trunk/Tests/lib/itemsprocfuncs
+END
+class.tx_gridelements_itemsprocfunc_colposlistTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/TYPO3v4/CoreProjects/!svn/ver/4454/gridelements/trunk/Tests/lib/itemsprocfuncs/class.tx_gridelements_itemsprocfunc_colposlistTest.php
+END
+class.tx_gridelements_itemsprocfunc_ctypelistTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/TYPO3v4/CoreProjects/!svn/ver/4476/gridelements/trunk/Tests/lib/itemsprocfuncs/class.tx_gridelements_itemsprocfunc_ctypelistTest.php
+END
+class.tx_gridelements_itemsprocfunc_abstractTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/TYPO3v4/CoreProjects/!svn/ver/4453/gridelements/trunk/Tests/lib/itemsprocfuncs/class.tx_gridelements_itemsprocfunc_abstractTest.php
+END

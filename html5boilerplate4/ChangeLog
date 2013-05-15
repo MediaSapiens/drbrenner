@@ -1,0 +1,37 @@
+2012-11-15 Flips  <admin@flips-soft.at>
+	* Fixed bug #36641
+	* Feature #28919
+	* Fixed bug #27661
+	* Task #26628
+
+2011-05-12 Einar Gislason  <einar@linkfactory.dk>
+	
+	* Removed Templavoila reference from config setup file
+	* Created a folder for example typescript configurations
+	* Added a templavoila.txt typoscript example 
+	* Task #26599: Updated the manual with a little bit more info on working with other jQuery extensions
+
+2011-04-27 Andy Grunwald  <andreas.grunwald@wmdb.de>
+
+	* Task #26269: Fill Readme.txt with usefull information about this project
+	* Feature #26273: Write unit tests for 'html5boilerplate'
+
+2011-04-26 Andy Grunwald  <andreas.grunwald@wmdb.de>
+
+	* Fixed bug #26331: Local typoscript settings (page.config.html5boilerplate) are ignored, only global (config.html5boilerplate) will be used
+	* Fixed bug #26329: If no config for htmlTag and metaCharsetTag is available, there is no <html> and <meta charset>-tag
+	* Fixed bug #26325: XClass-inclusion is missing for Classes/class.tx_html5boilerplate.php
+	* Feature #26271: Follow TYPO3-Guidelines by class naming
+	* Feature #26272: Decouple class 'user_html5boilerplate' from 'tslib_pibase'
+	* Task #26270: Add some documentation / usefull comments to existing files
+	* Task #26268: Complete ChangeLog till html5boilerplate 0.4.1
+	* Task #26267: Delete doc/wizard_*-Files
+	* Raised version to 0.5.0-dev
+
+2011-04-03 Einar Gislason  <einar@linkfactory.dk>
+
+	* Release of html5boilerplate 0.4.1
+
+2011-03-14 Einar Gislason  <einar@linkfactory.dk>
+
+	* initial code generated with kickstarter

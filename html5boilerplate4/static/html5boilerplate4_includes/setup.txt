@@ -1,0 +1,41 @@
+### Includes - setup ###
+### HTML5BOILERPLATE ###
+
+# Include CSS files
+page.includeCSS{
+	
+	# This is the default HTML5 Boilerplate stylesheet. This should be the first stylesheet in the header
+	# There are more css files in the Boilerplate css folder (EXT:html5boilerplate/res/css)
+	boilerplate_main = EXT:html5boilerplate4/res/css/main.css
+	boilerplate_normalize = EXT:html5boilerplate4/res/css/normalize.css
+	
+	# Your main css file can be inserted here
+	main = {$page.includeCSS.main}
+		
+}
+
+
+# Include Modernizr as the last script in the header
+page.headerData.200 = TEXT
+page.headerData.200.value (
+ <script src="typo3conf/ext/html5boilerplate4/res/js/vendor/modernizr-2.6.2.min.js"></script>
+)
+
+
+# Include jQuery from Google Libraries API
+# Javascript at the bottom of the page
+page.includeJSFooter{
+	# Helper plugins, log and console.log
+	plugins = typo3conf/ext/html5boilerplate4/res/js/plugins.js
+	# Include main js file
+	main = {$page.includeJSFooter.main}
+}
+
+# Insert a PNG fix for IE6 and less
+page.footerData.10 = TEXT
+page.footerData.10.value(
+	<!--[if lt IE 7 ]>
+		<script src="typo3conf/ext/html5boilerplate4/res/js/libs/dd_belatedpng.js"></script>
+		<script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+	<![endif]-->
+)

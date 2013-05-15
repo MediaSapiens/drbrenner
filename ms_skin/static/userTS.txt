@@ -1,0 +1,7 @@
+options.pageTree.showPageIdWithTitle=1
+
+options.pageTree.showNavTitle = 1
+setup.override.enableFlashUploader = 0
+setup.override.copyLevels=999
+setup.override.recursiveDelete=1
+setup.override.startModule = web_layout

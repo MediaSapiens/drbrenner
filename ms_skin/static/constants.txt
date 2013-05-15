@@ -1,0 +1,80 @@
+# target="_blank" sucks
+styles.content.links {
+  extTarget = 
+  target =
+}
+
+# enable the lightbox-rendering - nobody wants sth. different
+styles.content.imgtext.linkWrap.lightboxEnabled = 1
+
+# labels for filedownloads
+styles.content.uploads.filesizeBytesLabels = " | kB| MB| GB"
+
+
+
+#extensions
+
+plugin.tx_hypehtml5 {
+	common {
+		enableNormalize = 0
+		enableSelectivizr = 0
+		enableRespondJs = 0
+		enableModernizr = 0
+		includeStylesFirst = 0
+		installChromeFrame = 0
+	}
+
+	clean {
+		removeScriptAttributes = 1
+		removeStyleAttributes = 1
+		removeImageAttributes = 1
+		removeTableAttributes = 1
+	}
+}
+
+#custom
+skin_path = typo3conf/ext/ms_skin/
+
+
+
+language = de
+config{
+	sys_language_uid = 0
+	locale_all = de_DE.UTF-8
+}
+
+[globalVar = GP:L = 1]
+#[PIDinRootline = 1]
+language = en
+config{
+	sys_language_uid = 1
+	locale_all = en_EN.UTF-8
+}
+[global]
+
+[globalVar = GP:L = 2]
+language = ru
+config{
+	sys_language_uid = 2
+	locale_all = ru_RU.UTF-8
+}
+[global]
+
+site{
+	rootOfPage = 2
+	storagePid = 3
+	footerNavi = 4
+	copyright = Omicron
+	contact =
+	siteURL = http://omicron-med.de/
+
+}
+
+
+#local - dev
+
+
+
+[IP = 127.0.0.1][globalString = IENV:HTTP_HOST = localhost]
+    site.siteURL = http://localhost:9000/
+[end]

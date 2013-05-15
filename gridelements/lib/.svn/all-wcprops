@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/TYPO3v4/CoreProjects/!svn/ver/4576/gridelements/trunk/lib
+END
+class.tx_gridelements_cmoptions.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/TYPO3v4/CoreProjects/!svn/ver/4508/gridelements/trunk/lib/class.tx_gridelements_cmoptions.php
+END
+class.tx_gridelements_drawitemhook.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/TYPO3v4/CoreProjects/!svn/ver/4541/gridelements/trunk/lib/class.tx_gridelements_drawitemhook.php
+END
+getclipboarditem.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/TYPO3v4/CoreProjects/!svn/ver/4394/gridelements/trunk/lib/getclipboarditem.php
+END
+class.tx_gridelements_layoutsetup.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/TYPO3v4/CoreProjects/!svn/ver/4527/gridelements/trunk/lib/class.tx_gridelements_layoutsetup.php
+END
+class.tx_gridelements_helper.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/TYPO3v4/CoreProjects/!svn/ver/4554/gridelements/trunk/lib/class.tx_gridelements_helper.php
+END
+class.tx_gridelements_tcemainhook.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/TYPO3v4/CoreProjects/!svn/ver/4530/gridelements/trunk/lib/class.tx_gridelements_tcemainhook.php
+END
+class.tx_gridelements_tt_content.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/TYPO3v4/CoreProjects/!svn/ver/4550/gridelements/trunk/lib/class.tx_gridelements_tt_content.php
+END
+class.tx_gridelements_ajax.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/TYPO3v4/CoreProjects/!svn/ver/4554/gridelements/trunk/lib/class.tx_gridelements_ajax.php
+END
+class.tx_gridelements_tceformshook.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/TYPO3v4/CoreProjects/!svn/ver/4428/gridelements/trunk/lib/class.tx_gridelements_tceformshook.php
+END
+class.tx_gridelements_wizarditemshook.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/TYPO3v4/CoreProjects/!svn/ver/4571/gridelements/trunk/lib/class.tx_gridelements_wizarditemshook.php
+END
+conf.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/TYPO3v4/CoreProjects/!svn/ver/4394/gridelements/trunk/lib/conf.php
+END
+wizard_gridelements_backend_layout.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/TYPO3v4/CoreProjects/!svn/ver/4483/gridelements/trunk/lib/wizard_gridelements_backend_layout.php
+END
+wrapperForT3libBeFunc.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/TYPO3v4/CoreProjects/!svn/ver/4567/gridelements/trunk/lib/wrapperForT3libBeFunc.php
+END

@@ -1,0 +1,37 @@
+######## Default page-settings ########
+config {
+  extTarget =
+  disablePrefixComment = 1
+  inlineStyle2TempFile = 1
+  moveJsFromHeaderToFooter = 1
+  doctype = html5
+  xmlprologue = none
+  xhtml_cleaning = all
+  removeDefaultJS = external
+  sys_language_overlay = 1    
+  sys_language_uid = {$config.sys_language_uid}
+}
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ms_skin/static/libs/style.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ms_skin/static/libs/libs.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ms_skin/static/libs/extensions.txt">
+
+page = PAGE
+page.10 = FLUIDTEMPLATE
+page.10 {
+  file.stdWrap.cObject = CASE
+  file.stdWrap.cObject {
+    # slide the template
+    key.data = levelfield:-1, backend_layout_next_level, slide
+    key.override.field = backend_layout
+    # default template file
+    default = TEXT
+    default.value = {$skin_path}layout/sys-templates/1col.html
+    # template file for backend-layout with ID 2
+    2 = TEXT
+    2.value = {$skin_path}layout/sys-templates/2col.html
+  }
+}
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ms_skin/static/libs/headerdata.txt">
+

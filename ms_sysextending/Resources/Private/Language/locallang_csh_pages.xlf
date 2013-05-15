@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-04-21T14:23:05Z" product-name="ms_sysextending">
+		<header/>
+		<body>
+
+			<trans-unit id="herotitle.description">
+				<source>Hero title</source>
+			</trans-unit>
+			<trans-unit id="heroimage.description">
+				<source>Hero image</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

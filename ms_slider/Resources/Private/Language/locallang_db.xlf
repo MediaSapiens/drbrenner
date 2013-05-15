@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-04-17T21:07:32Z" product-name="ms_slider">
+    <header/>
+    <body>
+
+
+      <trans-unit id="tx_msslider_domain_model_slider">
+        <source>Slider</source>
+      </trans-unit>
+      <trans-unit id="tx_msslider_domain_model_slider.title">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="tx_msslider_domain_model_slider.teaser">
+        <source>Teaser</source>
+      </trans-unit>
+      <trans-unit id="tx_msslider_domain_model_slider.image">
+        <source>Image</source>
+      </trans-unit>
+      <trans-unit id="tx_msslider_domain_model_slider.link">
+        <source>Link</source>
+      </trans-unit>
+      <trans-unit id="tx_msslider_domain_model_slider.linktext">
+        <source>Linktext</source>
+      </trans-unit>
+
+      <trans-unit id="flexfForm.Settings">
+        <source>Settings</source>
+      </trans-unit>
+
+      <trans-unit id="flexfForm.WhatDisplay">
+        <source>What to display</source>
+      </trans-unit>
+
+
+    </body>
+  </file>
+</xliff>

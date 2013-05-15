@@ -1,0 +1,14 @@
+*.py[co]
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.swp
+.idea
+env
+.envs
+_dumps
+## for brunch
+# NPM packages folder.
+node_modules/
+

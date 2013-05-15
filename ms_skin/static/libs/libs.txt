@@ -1,0 +1,211 @@
+
+#content fields
+#1 col tmpl
+lib.field_intro < styles.content.get
+lib.field_intro.select.where = colPos = 0
+lib.field_content.select.languageField = sys_language_uid
+
+lib.field_content < lib.field_intro
+lib.field_content.select.where = colPos = 1
+
+#2 col tmpl
+lib.field_leftCol < lib.field_intro
+lib.field_rightCol < lib.field_content
+lib.field_hero < lib.field_intro
+lib.field_hero.select.where = colPos = 3
+
+#grid storage
+plugin.tx_dce.persistence.storagePid = {$site.storagePid}
+
+lib.mainNavi = HMENU
+lib.mainNavi{
+    entryLevel = 0
+    #wrap = |
+    1 = TMENU
+    1 {
+        expAll = 1
+        wrap = <ul class="nav u-mainmenu">|</ul>
+        noBlur = 1
+
+
+		NO{
+			wrapItemAndSub = <li>|</li>
+			stdWrap.wrap = <span>|</span>
+			ATagParams = class="link"
+			#ATagTitle.field = subtitle // abstract // description // title
+			#doNotLinkIt = 1
+		}
+
+		ACT < .NO
+        ACT = 1
+        ACT.wrapItemAndSub = <li class="active">|</li>
+          
+		CUR < .ACT
+        CUR = 1
+        
+        IFSUB < .NO
+        IFSUB = 1
+        IFSUB{
+        	stdWrap.wrap = <span>|<i class="icon-chevron"></i></span>
+        }
+
+        ACTIFSUB < .IFSUB
+        ACTIFSUB = 1
+        ACTIFSUB.wrapItemAndSub = <li class="active">|</li>
+      
+        CURIFSUB < .ACTIFSUB
+        CURIFSUB = 1
+        
+    }
+
+    #2 level
+    2 = TMENU
+    2 < lib.mainNavi.1
+    2{
+        wrap = <ul class="submenu">|</ul>
+    }
+
+}
+
+lib.footerNavi = HMENU
+lib.footerNavi{
+    special = directory
+    special.value = {$site.footerNavi}
+    1 = TMENU
+    1 {
+        noBlur = 1
+        target = blank
+        wrap = <ul class="nav u-footermenu">|</ul>
+        NO {
+          #automatische Verlinkung des Menüs ausschalten
+          doNotLinkIt = 1
+          wrapItemAndSub=<li>|</li>
+          stdWrap.cObject = CASE
+          stdWrap.cObject {
+             key.field = doktype
+             default = TEXT
+             default {
+                typolink.parameter.field = uid
+                #typolink.target = _blank
+                field = title
+                stdWrap.htmlSpecialChars = 1
+             }
+             # 4 = shortcut
+             4 = TEXT
+             4 {
+                field = title
+                typolink.parameter.field = shortcut
+                #typolink.target = _blank
+             }
+             # 3 = external url
+             3 = TEXT
+             3 {
+                field = title
+                typolink.parameter.field = url
+                #typolink.extTarget.field = target
+                typolink.target = _blank
+             }
+          }
+        }
+        ACT < .NO
+        ACT = 1
+        ACT.wrapItemAndSub=<li class="active">|</li>
+    }
+}
+						<ul class="nav u-langmenu">
+							<li class="active"><a href="#">En</a></li>
+							<li><a href="#">De</a></li>
+							<li><a href="#">Ru</a></li>
+						</ul>
+#laguage navi
+lib.langNavi = COA
+lib.langNavi {
+    #wrap = <nav class="lang">|</nav>
+    10 = HMENU
+    10{
+        special = language
+        special.value = 0,1,2
+        special.normalWhenNoLanguage = 0
+        wrap = <ul class="nav u-langmenu">|</ul>
+        1 = TMENU
+        1 {
+            noBlur = 1
+            # Standard Sprachen
+            NO = 1
+            NO {
+            	wrapItemAndSub = <li>|</li>
+                #stdWrap.setCurrent = Deutsch || English
+                #stdWrap.current = 1
+                # Standard-Titel fur den Link ware Seitenttitel
+                # => anderer Text als Link-Text (Optionsschift)
+                stdWrap.override = de || en || ru
+                # Standardma?ige Verlinkung des Menus ausschalten
+                # Da diese sonstige GET-Parameter nicht enthalt
+                doNotLinkIt = 1
+                # Nun wird der Link mit den aktuellen GET-Parametern neu aufgebaut
+                stdWrap.typolink.parameter.data = page:uid
+                stdWrap.typolink.additionalParams = &L=0 || &L=1 || &L=2
+                stdWrap.typolink.addQueryString = 1
+                stdWrap.typolink.addQueryString.exclude = L,id,cHash,no_cache
+                stdWrap.typolink.addQueryString.method = GET
+                stdWrap.typolink.useCacheHash = 0
+                stdWrap.typolink.no_cache = 0
+                stdWrap.typolink.ATagParams = class = ""
+            }
+            # Aktive Sprache
+            ACT < .NO
+            #ACT.stdWrap.typolink.ATagParams = class="active"
+            ACT.wrapItemAndSub = <li class="active">|</li>
+
+
+            # NO + Übersetzung nicht vorhanden
+            USERDEF1 < .NO
+            # ACT + Übersetzung nicht vorhanden
+            USERDEF2 < .ACT
+        }
+    }
+}
+
+
+lib.copyright = TEXT
+lib.copyright{
+	data = date:U
+	strftime = %Y
+	noTrimWrap = |©  |  {$site.copyright}|
+}
+
+lib.contact = TEXT
+lib.contact.value = {$site.contact}
+
+#id={$site.rootOfPage}&
+lib.logo = TEXT
+lib.logo.value = <a class="brand" href="./?L={$config.sys_language_uid}">{$site.copyright}</a>
+
+#######
+# gce elements
+#######
+
+tt_content.gridelements_pi1.20.10.setup {
+  2 < lib.gridelements.defaultGridSetup
+  2 {
+    prepend = COA
+
+    prepend {
+      10 = IMAGE
+      10 {
+        required=1
+        file.import=uploads/tx_gridelements/
+      	file.import.data = field:flexform_image
+      	#file.width = 1400
+      	#file.height = 200c
+      	params = class="cover"
+      }
+      20 = TEXT
+      20 {
+        data = field:flexform_headline
+        #typolink.parameter.data = field:flexform_link
+        wrap =<div class="container"><div class="content"><div class="wrap"><h2>|</h2></div></div></div>
+      }
+    }
+  }
+}

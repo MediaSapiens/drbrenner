@@ -1,0 +1,25 @@
+<f:layout name="Default" />
+<f:section name="main">
+
+<f:flashMessages />
+
+
+  <f:if condition="{sliders}">
+    <div class="flexslider" id="index-slider">
+      <ul class="slides">
+      <f:for each="{sliders}" as="slider">
+        <li>
+          <f:image src="uploads/tx_msslider/{slider.image}" maxWidth="1600" alt="{slider.title}" title="{slider.title}" />
+          <div class="caption">
+            <h3>{slider.title}</h3>
+            <p>{slider.teaser}</p>
+            <a href="{slider.link}" class="golink">{slider.linktext}</a>
+          </div>
+        </li>
+      </f:for>
+      </ul>
+    </div>
+  </f:if>
+
+
+</f:section>

@@ -1,0 +1,82 @@
+
+######## code-cleanup for h1-h6, p-tags etc. ########
+lib.parseFunc_RTE {
+  # remove class="bodytext" for all <p>
+  nonTypoTagStdWrap.encapsLines.addAttributes.P.class >
+  # Set default class for ul from rte for easier custom styling
+  externalBlocks := addToList(ul,li)
+  externalBlocks {
+    #ul.stripNL = 1
+    #ul.callRecursive = 1
+    #ul.callRecursive.tagStdWrap.HTMLparser = 1
+    #ul.callRecursive.tagStdWrap.HTMLparser.tags.ul {
+    #  fixAttrib.class.default = contentlist
+    #}
+  }
+}
+
+# clean headers
+lib.stdheader {
+  10.1.fontTag = <h1>|</h1>
+  10.1.dataWrap = |
+  10.2.fontTag = <h2>|</h2>
+  10.2.dataWrap = |
+  10.3.fontTag = <h3>|</h3>
+  10.3.dataWrap = |
+  10.4.fontTag = <h4>|</h4>
+  10.4.dataWrap = |
+  10.5.fontTag = <h5>|</h5>
+  10.5.dataWrap = |
+  10.6.fontTag = <h6>|</h6>
+  10.6.dataWrap = |
+  stdWrap.dataWrap = |
+}
+
+
+# typo3 4.7 - no <header> around default header
+lib.stdheader.stdWrap.dataWrap.override = |
+
+
+
+# wrap an article element around the default typo3 elements
+# this way gridelements and plugins are not wrapped with article -- this will be done manually
+# with typoscript or in the corresponding templates
+/*
+tt_content.text.stdWrap.dataWrap = <article id="c{field:uid}">|</article>
+tt_content.textpic.stdWrap.dataWrap = <article id="c{field:uid}">|</article>
+tt_content.image.stdWrap.dataWrap = <article id="c{field:uid}">|</article>
+tt_content.bullets.stdWrap.dataWrap = <article id="c{field:uid}">|</article>
+tt_content.table.stdWrap.dataWrap = <article id="c{field:uid}">|</article>
+tt_content.uploads.stdWrap.dataWrap = <article id="c{field:uid}">|</article>
+tt_content.multimedia.stdWrap.dataWrap = <article id="c{field:uid}">|</article>
+tt_content.media.stdWrap.dataWrap = <article id="c{field:uid}">|</article>
+tt_content.menu.stdWrap.dataWrap = <article id="c{field:uid}">|</article>
+*/
+
+tt_content.text.stdWrap.dataWrap = |
+tt_content.textpic.stdWrap.dataWrap = |
+tt_content.image.stdWrap.dataWrap = |
+tt_content.bullets.stdWrap.dataWrap = |
+tt_content.table.stdWrap.dataWrap = |
+tt_content.uploads.stdWrap.dataWrap = |
+tt_content.multimedia.stdWrap.dataWrap = |
+tt_content.media.stdWrap.dataWrap = |
+tt_content.menu.stdWrap.dataWrap = |
+
+
+# remove the wrapper from hr-divider
+tt_content.div.wrap >
+
+# this is some stupid typo3-behaviour. fix upscaling of images by removing width/height
+#tt_content.image.20.1.imageLinkWrap.height >
+#tt_content.image.20.1.imageLinkWrap.width >
+
+# Disable ce wrapping (for dce)
+tt_content.stdWrap.innerWrap.cObject.default.stdWrap.if {
+        isInList.field = CType
+        negate = 1
+}
+
+# remove the default wrap for all content elements
+tt_content.stdWrap.innerWrap.cObject.default >
+
