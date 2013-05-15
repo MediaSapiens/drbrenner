@@ -1,0 +1,52 @@
+<f:comment>
+  Landingpage Template
+</f:comment>
+<div class="l-wrapper">
+	<header class="b-header">
+		<div class="container">
+			<div class="navbar">
+				<div class="navbar-inner">					
+					<f:cObject typoscriptObjectPath="lib.logo" />
+					<a href="#" data-target=".nav-collapse" data-toggle="collapse" class="btn-menu collapsed"><span class="link">Menu <i class="icon-chevron"></i></span></a>
+					<div class="nav-collapse collapse">
+						<f:cObject typoscriptObjectPath="lib.mainNavi" />
+					</div><!-- / nav-collapse -->
+					<div class="pull-right">
+						<f:cObject typoscriptObjectPath="lib.langNavi" />
+					</div>
+				</div><!-- / navbar-inner -->
+			</div><!-- / navbar -->
+		</div>
+	</header><!-- / b-header -->
+    <section class="b-pagetitle">
+        <f:cObject typoscriptObjectPath="lib.field_hero" />
+    </section><!-- / b-pagetitle -->
+    <section class="b-content">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span4 menu">
+                    <div class="wrap">
+                        <f:cObject typoscriptObjectPath="lib.field_leftCol" />
+                    </div>
+                </div><!-- / menu -->
+                <div class="span8 content">
+                    <div class="wrap">
+                        <f:cObject typoscriptObjectPath="lib.field_rightCol" />
+                    </div>
+                </div><!-- / content -->
+            </div>
+        </div>
+    </section><!-- / b-content -->
+    <div class="l-footerpush"></div>
+</div><!--/ .l-wrapper -->
+<footer class="b-footer">
+	<div class="container">
+		<div class="pull-left">
+			<f:cObject typoscriptObjectPath="lib.footerNavi" />
+		</div>
+		<div class="pull-right">
+			<span class="copyrights"><f:cObject typoscriptObjectPath="lib.copyright" /></span>
+			<span class="phone"><f:cObject typoscriptObjectPath="lib.contact" /></span>
+		</div>
+	</div>
+</footer><!-- / b-footer -->

@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title></title>
+  <link media="all" rel="stylesheet" type="text/css" href="css/all.css" />
+  <link media="all" rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.custom.css" />
+  <script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="w1">
+      <div class="header">
+        <strong class="logo"><a href="#">PRAXIS DR. MED. NATALIA BRENNER</a></strong>
+        <div class="nav-holder">
+          <ul class="lang pull-right">
+            <li><a href="#">EN</a>
+              <ul class="drop">
+                <li><a href="#">GR</a></li>
+                <li><a href="#">UK</a></li>
+                <li><a href="#">PS</a></li>
+                <li><a href="#">GE</a></li>
+                <li><a href="#">FR</a></li>
+                <li><a href="#">DE</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav">
+            <li><a href="#">Clinic</a>
+              <ul class="drop">
+                <li class="col">
+                  <p><a href="#">Philosophie</a></p>
+                  <p><a href="#">Bildergalerie</a></p>
+                </li>
+                <li class="col">
+                  <p><a href="#">Somepage</a></p>
+                  <p><a href="#">Team</a></p>
+                </li>
+                <li class="col">
+                  <p><a href="#">someimportantpage</a></p>
+                </li>
+                <li class="col"></li>
+                <li class="col"></li>
+              </ul>
+            </li>
+            <li><a href="#">Services</a>
+              <ul class="drop">
+                <li class="col">
+                  <p><a href="#">Services</a></p>
+                  <p><a href="#">Bildergalerie</a></p>
+                </li>
+                <li class="col">
+                  <p><a href="#">Somepage</a></p>
+                  <p><a href="#">Team</a></p>
+                </li>
+                <li class="col">
+                  <p><a href="#">someimportantpage</a></p>
+                </li>
+                <li class="col"></li>
+                <li class="col"></li>
+              </ul>
+            </li>
+            <li><a href="#">News &amp; DOwnloads</a>
+              <ul class="drop">
+                <li class="col">
+                  <p><a href="#">News &amp; DOwnloads</a></p>
+                  <p><a href="#">Bildergalerie</a></p>
+                </li>
+                <li class="col">
+                  <p><a href="#">Somepage</a></p>
+                  <p><a href="#">Team</a></p>
+                </li>
+                <li class="col">
+                  <p><a href="#">someimportantpage</a></p>
+                </li>
+                <li class="col"></li>
+                <li class="col"></li>
+              </ul>
+            </li>
+            <li><a href="#">contact</a>
+              <ul class="drop">
+                <li class="col">
+                  <p><a href="#">contact</a></p>
+                  <p><a href="#">Bildergalerie</a></p>
+                </li>
+                <li class="col">
+                  <p><a href="#">Somepage</a></p>
+                  <p><a href="#">Team</a></p>
+                </li>
+                <li class="col">
+                  <p><a href="#">someimportantpage</a></p>
+                </li>
+                <li class="col"></li>
+                <li class="col"></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img clas="visual" src="images/visual.jpg" alt="" width="981" height="250" />
+      <div class="twocolumns">
+        <div class="content">
+          <h2>Kontact</h2>
+          <p>Chocolate cake donut tiramisu marzipan chocolate bar bonbon cake. Fruitcake fruitcake brownie chocolate cake topping.</p>
+        </div>
+        <form action="#" class="contact-form">
+          <fieldset>
+            <div class="row">
+              <div class="label-holder">
+                <span>Anrede</span>
+              </div>
+              <div class="form-element-holder">
+                <input id="radio-1" name="radio" type="radio" />
+                <label for="radio-1">Herr</label>
+                <input id="radio-2" name="radio" type="radio" />
+                <label for="radio-2">Frau</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="label-holder">
+                <label for="vorname">Vorname<sup>*</sup></label>
+              </div>
+              <div class="form-element-holder">
+                <input type="text" id="vorname" value="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="label-holder">
+                <label for="nachname">Nachname<sup>*</sup></label>
+              </div>
+              <div class="form-element-holder">
+                <input type="text" id="nachname" value="" />
+              </div>
+            </div>
+            <div class="row error">
+              <div class="label-holder">
+                <label for="email-adresse">Email-Adresse<sup>*</sup></label>
+              </div>
+              <div class="form-element-holder">
+                <input type="text" id="email-adresse" value="" />
+              </div>
+              <div class="error-message">
+                <span>Sorry, this email address is not valid.</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="label-holder">
+                <label for="telefon">Telefon<sup>*</sup></label>
+              </div>
+              <div class="form-element-holder">
+                <input type="text" id="telefon" value="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="label-holder">
+                <label for="datepicker">Geburtstag<sup>*</sup></label>
+              </div>
+              <div class="form-element-holder">
+                <input type="text" id="datepicker" value="" />
+                <label for="datepicker"><img class="calendar-img" src="images/calendar.gif" alt="" width="16" height="16" /></label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="label-holder">
+                <label for="ihre-nachricht">Ihre Nachricht<sup>*</sup></label>
+              </div>
+              <div class="form-element-holder">
+                <textarea name="" id="ihre-nachricht" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="label-holder"></div>
+              <div class="form-element-holder">
+                <a class="link-type-1" href="#">Jetzt Termin vereinbaren</a>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="pull-right">
+      <p>Copyright © 2013 Mediasapiens</p>
+      <p>All rights reserved</p>
+    </div>
+    <div class="pull-left">
+      <address>
+        Am Kurpark 2, 53177<br/>
+        Bonn-Bad Godesberg
+      </address>
+    </div>
+    <dl>
+      <dt>TEL:</dt>
+      <dd>+49(0) 228 446 78 23</dd>
+      <dt>FAX:</dt>
+      <dd>+49(0) 228 446 78 20</dd>
+      <dt>E-mail:</dt>
+      <dd><a href="mailto:info@brennerpraxis.de">info@brennerpraxis.de</a></dd>
+    </dl>
+  </div>
+</body>
+</html>

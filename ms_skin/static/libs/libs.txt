@@ -24,7 +24,7 @@ lib.mainNavi{
     1 = TMENU
     1 {
         expAll = 1
-        wrap = <ul class="nav u-mainmenu">|</ul>
+        wrap = <ul class="nav">|</ul>
         noBlur = 1
 
 
@@ -112,11 +112,7 @@ lib.footerNavi{
         ACT.wrapItemAndSub=<li class="active">|</li>
     }
 }
-						<ul class="nav u-langmenu">
-							<li class="active"><a href="#">En</a></li>
-							<li><a href="#">De</a></li>
-							<li><a href="#">Ru</a></li>
-						</ul>
+
 #laguage navi
 lib.langNavi = COA
 lib.langNavi {
@@ -124,9 +120,9 @@ lib.langNavi {
     10 = HMENU
     10{
         special = language
-        special.value = 0,1,2
+        special.value = 0,1,2,3,4,5
         special.normalWhenNoLanguage = 0
-        wrap = <ul class="nav u-langmenu">|</ul>
+        wrap = <ul class="lang pull-right"><li><a href="#" class="showActiveL">EN</a><ul class="drop">|</ul></li></ul>
         1 = TMENU
         1 {
             noBlur = 1
@@ -138,13 +134,13 @@ lib.langNavi {
                 #stdWrap.current = 1
                 # Standard-Titel fur den Link ware Seitenttitel
                 # => anderer Text als Link-Text (Optionsschift)
-                stdWrap.override = de || en || ru
+                stdWrap.override = DE || EN || RU || AR || ES || PT
                 # Standardma?ige Verlinkung des Menus ausschalten
                 # Da diese sonstige GET-Parameter nicht enthalt
                 doNotLinkIt = 1
                 # Nun wird der Link mit den aktuellen GET-Parametern neu aufgebaut
                 stdWrap.typolink.parameter.data = page:uid
-                stdWrap.typolink.additionalParams = &L=0 || &L=1 || &L=2
+                stdWrap.typolink.additionalParams = &L=0 || &L=1 || &L=2 || &L=3 || &L=4 || &L=5
                 stdWrap.typolink.addQueryString = 1
                 stdWrap.typolink.addQueryString.exclude = L,id,cHash,no_cache
                 stdWrap.typolink.addQueryString.method = GET
@@ -155,7 +151,7 @@ lib.langNavi {
             # Aktive Sprache
             ACT < .NO
             #ACT.stdWrap.typolink.ATagParams = class="active"
-            ACT.wrapItemAndSub = <li class="active">|</li>
+            ACT.wrapItemAndSub = <li class="activeL">|</li>
 
 
             # NO + Übersetzung nicht vorhanden

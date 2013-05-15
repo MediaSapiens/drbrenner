@@ -60,13 +60,38 @@ config{
 }
 [global]
 
+[globalVar = GP:L = 3]
+language = ar
+config{
+	sys_language_uid = 3
+	locale_all = ar_AE.UTF-8
+}
+[global]
+
+[globalVar = GP:L = 4]
+language = en
+config{
+	sys_language_uid = 4
+	locale_all = es_ES.UTF-8
+}
+[global]
+
+[globalVar = GP:L = 5]
+language = pt
+config{
+	sys_language_uid = 5
+	locale_all = pt_PT.UTF-8
+}
+[global]
+
+
 site{
 	rootOfPage = 2
 	storagePid = 3
 	footerNavi = 4
-	copyright = Omicron
+	copyright = Dr. Med. Brenner
 	contact =
-	siteURL = http://omicron-med.de/
+	siteURL = http://drbrennerpraxis.de/
 
 }
 
@@ -75,6 +100,6 @@ site{
 
 
 
-[IP = 127.0.0.1][globalString = IENV:HTTP_HOST = localhost]
+[IP = 127.0.0.1][globalString = IENV:HTTP_HOST = localhost:9000]
     site.siteURL = http://localhost:9000/
 [end]
