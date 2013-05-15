@@ -1,8 +1,0 @@
-### Includes - constants ###
-### MOBILE HTML5BOILERPLATE ###
-
-# Your main.css file
-page.includeCSS.main = 
-
-# Your main js file
-page.includeJSFooter.main = 
