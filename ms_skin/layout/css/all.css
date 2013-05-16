@@ -30,11 +30,11 @@ img {
 }
 a {
   text-decoration: none;
-  color: #4364a3;
+  color: #b83997;
 }
 a:hover {
   text-decoration:underline;
-  color: #496bab;
+  color: #c351a6;
 }
 input,
 textarea,
@@ -212,13 +212,15 @@ fieldset {
   left: 1px;
 }
 .nav .drop li{
-  float: left;
-  width: 176px;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 5px;
+  width: 171px;
 }
 .nav .drop p{margin: 0 0 14px}
 .nav .drop a{color: #666}
 .nav .drop a:hover{
-  color: #4364a3;
+  color: #c351a6;
   text-decoration: none;
 }
 .visual{display: block}
@@ -229,7 +231,7 @@ fieldset {
 .link-type-1{
   display: inline-block;
   color: #fff;
-  background: #4364a3;
+  background: #b83997;
   text-transform: uppercase;
   position: relative;
   padding: 10px;
@@ -238,7 +240,7 @@ fieldset {
 }
 .link-type-1:hover{
   text-decoration: none;
-  background: #496bab;
+  background: #c351a6;
   color: #fff;
 }
 .link-type-1:after {
@@ -252,14 +254,38 @@ fieldset {
   top: 50%;
   margin: -5px 0 0;
 }
-.aside{
-  width: 277px;
+.aside{width: 277px}
+.aside .box{
   font: 14px 'maven_pro_light300', Arial, Helvetica, sans-serif;
   text-align: center;
   color: #999;
   background: #eaeaea;
   padding: 20px 5px 25px;
+  margin: 0 0 27px;
 }
+.aside .box dl{
+  margin: 0 auto;
+  width: 210px;
+  text-align: left;
+  font-size: 10px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.aside .box dl a{color: #999}
+.aside .box dl dt{
+  float: left;
+  margin: 0 3px 0 0;
+}
+.aside .box address{
+  font-style: normal;
+  text-align: left;
+  width: 210px;
+  margin: 0 auto;
+  font-size: 10px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.aside .box dl dd{margin: 0}
 .aside p{margin: 0 0 14px}
 .content{
   width: 610px;
@@ -476,15 +502,4 @@ h2{
   text-transform: uppercase;
   color: #999;
 }
-.footer dl{
-  margin: 0 auto;
-  width: 210px;
-}
-.footer dl a{color: #999}
-.footer dl dt{
-  float: left;
-  margin: 0 3px 0 0;
-}
 .footer p{margin: 0}
-.footer address{font-style: normal}
-.footer dl dd{margin: 0}
