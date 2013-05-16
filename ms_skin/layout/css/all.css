@@ -493,6 +493,67 @@ h2{
   background: url(../images/rotate-gallery.png) no-repeat 100% 0;
 }
 .gallery .next:hover{background-position: 100% 100%}
+.gallery-news {
+  overflow: hidden;
+  position: relative;
+  font: 12px/24px 'istok_webregular', Arial, Helvetica, sans-serif;
+  color: #666;
+  width: 656px;
+  margin: 20px 0 0;
+}
+.gallery-news .frame {
+  width: 582px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.gallery-news .frame ul {
+  position: relative;
+  width: 9999px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.gallery-news .frame ul li {
+  float: left;
+  width: 174px;
+  margin-right: 20px;
+}
+.gallery-news .date{
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 13px;
+}
+.gallery-news h2{
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+.gallery-news p{margin: 0}
+.gallery-news .prev{
+  position: absolute;
+  width: 5px;
+  height: 9px;
+  background: url(../images/gallery-news-switcher.gif) no-repeat;
+  left: 0;
+  top: 50%;
+  margin: -4px 0 0;
+  text-indent: -9999px;
+}
+.gallery-news .prev:hover{background-position: 0 100%}
+.gallery-news .next{
+  text-indent: -9999px;
+  position: absolute;
+  width: 5px;
+  height: 9px;
+  background: url(../images/gallery-news-switcher.gif) no-repeat 100% 0;
+  right: 0;
+  top: 50%;
+  margin: -4px 0 0;
+}
+.gallery-news .next:hover{background-position: 100% 100%}
 .footer{
   height: 116px;
   width: 980px;
