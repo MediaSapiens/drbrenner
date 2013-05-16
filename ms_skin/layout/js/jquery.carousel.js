@@ -22,6 +22,22 @@ function initCarousel() {
 		stretchSlideToMask: true,
 		step: 1
 	});
+	jQuery('div.gallery-news').scrollGallery({
+		mask: 'div.frame',
+		slider: '>*',
+		slides: '>*',
+		currentNumber: 'span.cur-num',
+		totalNumber: 'span.all-num',
+		disableWhileAnimating: true,
+		generatePagination: false,
+		circularRotation: true,
+		pauseOnHover: false,
+		autoRotation: false,
+		maskAutoSize: false,
+		switchTime: 2000,
+		animSpeed: 600,
+		step: 1
+	});
 }
 
 /*
