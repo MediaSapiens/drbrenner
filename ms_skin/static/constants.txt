@@ -103,3 +103,38 @@ site{
 [IP = 127.0.0.1][globalString = IENV:HTTP_HOST = localhost:9000]
     site.siteURL = http://localhost:9000/
 [end]
+
+
+
+
+###
+# extensions
+###
+
+#news
+
+plugin.tx_news {
+	rss.channel {
+		title = dr. brenner
+		description =
+		link = http://drbrenner.de
+		language = de_DE
+		copyright = dr. brenner
+		category = medizin
+		generator = -
+	}
+	view {
+		 # cat=plugin.tx_news/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:ms_skin/Resources/Private/Templates/
+		 # cat=plugin.tx_news/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:ms_skin/Resources/Private/Partials/
+		 # cat=plugin.tx_news/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:ms_skin/Resources/Private/Layouts/
+	}
+
+		settings {
+			 # cat=plugin.tx_news/file; type=string; label=Path to CSS file
+	 		cssFile >
+	 		#EXT:news/Resources/Public/Css/news-basic.css
+		}
+}
