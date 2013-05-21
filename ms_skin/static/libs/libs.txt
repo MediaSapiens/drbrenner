@@ -46,7 +46,7 @@ lib.mainNavi{
         IFSUB < .NO
         IFSUB = 1
         IFSUB{
-        	stdWrap.wrap = <span>|<i class="icon-chevron"></i></span>
+        	#stdWrap.wrap = <span>|<i class="icon-chevron"></i></span>
         }
 
         ACTIFSUB < .IFSUB
@@ -62,7 +62,7 @@ lib.mainNavi{
     2 = TMENU
     2 < lib.mainNavi.1
     2{
-        wrap = <ul class="submenu">|</ul>
+        wrap = <ul class="drop">|</ul>
     }
 
 }
