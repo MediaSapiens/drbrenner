@@ -156,7 +156,7 @@ fieldset {
   clear: both;
 }
 .nav > li{float: left}
-.nav > li > a:after {
+.nav > li > a.subcategory:after {
   content: '';
   display: block;
   width: 9px;
@@ -167,8 +167,8 @@ fieldset {
   margin: -4px 0 0;
   background: url(../images/nav-opener.gif) no-repeat;
 }
-.nav > li:hover >a:after,
-.nav > li > a:hover:after{background-position: 0 100%}
+.nav > li:hover >a.subcategory:after,
+.nav > li > a..subcategory:hover:after{background-position: 0 100%}
 .nav > li > a{
   text-decoration: none;
   color: #333;
@@ -180,6 +180,7 @@ fieldset {
   float: left;
   padding: 25px 65px 26px 20px;
 }
+.nav > li .active,
 .nav > li:hover a,
 .nav > li > a:hover{
   color: #666;
@@ -215,6 +216,7 @@ fieldset {
   display: inline-block;
   vertical-align: top;
   padding-right: 5px;
+  padding-bottom: 15px;
   width: 171px;
 }
 .nav .drop p{margin: 0 0 14px}
