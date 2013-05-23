@@ -30,8 +30,8 @@
 }
 
 .news .article {
-	padding-bottom: 15px;
-	margin-bottom: 15px;
+	/*padding-bottom: 15px;
+	margin-bottom: 15px;*/
 }
 
 .news .article:last-child {
@@ -75,13 +75,21 @@
 	margin: 0 0 10px 0;
 }
 
+.news .header {
+        height: auto;
+        width: auto;
+}
+
 .news .footer {
 	clear: both;
-	padding: 10px 0 0 0;
-	border-top: 1px solid #eee;
+	padding: 5px 0 15px 0;
+	border-bottom: 1px solid #eee;
 	margin-top: 15px;
 	color: #888;
+        height: auto;
+        width: auto;
 }
+
 
 .news .footer p {
 	line-height: 1em;
