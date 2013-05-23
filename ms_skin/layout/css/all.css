@@ -187,6 +187,11 @@ fieldset {
   background: #eaeaea;
   border-color: #ddd;
 }
+
+.nav > li .active {
+  color: #b83997;
+}
+
 .nav li:hover .drop{display: block}
 .nav .drop{
   position: absolute;
