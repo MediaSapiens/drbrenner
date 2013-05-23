@@ -30,8 +30,8 @@
 }
 
 .news .article {
-	padding-bottom: 15px;
-	margin-bottom: 15px;
+	/*padding-bottom: 15px;
+	margin-bottom: 15px;*/
 }
 
 .news .article:last-child {
@@ -69,19 +69,33 @@
 .news .article h3 {
 	font-size: 1.25em;
 	margin-bottom: 0;
+        font-weight: 300;
+}
+
+.news .article h3 a {
+        text-decoration: inherit;
 }
 
 .news .article .teaser-text {
 	margin: 0 0 10px 0;
 }
 
+.news .header {
+        height: auto;
+        width: auto;
+        padding: 0 0 0 0;
+}
+
 .news .footer {
 	clear: both;
-	padding: 10px 0 0 0;
-	border-top: 1px solid #eee;
+	padding: 5px 0 15px 0;
+	border-bottom: 1px solid #eee;
 	margin-top: 15px;
 	color: #888;
+        height: auto;
+        width: auto;
 }
+
 
 .news .footer p {
 	line-height: 1em;

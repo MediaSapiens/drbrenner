@@ -187,6 +187,20 @@ fieldset {
   background: #eaeaea;
   border-color: #ddd;
 }
+
+ul.nav li.active a.link {
+  color: #b83997;
+}
+
+ul.nav li.active ul.drop li a.link {
+  color: #666;
+}
+
+ul.nav li.active ul.drop li.active a.link {
+  color: #b83997;
+}
+
+
 .nav li:hover .drop{display: block}
 .nav .drop{
   position: absolute;
@@ -511,7 +525,7 @@ h2{
 }
 .gallery-news .frame ul {
   position: relative;
-  width: 9999px;
+  width: 570px;
   padding: 0;
   margin: 0;
   list-style: none;
