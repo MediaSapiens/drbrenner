@@ -188,9 +188,18 @@ fieldset {
   border-color: #ddd;
 }
 
-.nav li.active a {
+ul.nav li.active a.link {
   color: #b83997;
 }
+
+ul.nav li.active ul.drop li a.link {
+  color: #666;
+}
+
+ul.nav li.active ul.drop li.active a.link {
+  color: #b83997;
+}
+
 
 .nav li:hover .drop{display: block}
 .nav .drop{
