@@ -69,6 +69,11 @@
 .news .article h3 {
 	font-size: 1.25em;
 	margin-bottom: 0;
+        font-weight: 300;
+}
+
+.news .article h3 a {
+        text-decoration: inherit;
 }
 
 .news .article .teaser-text {
