@@ -188,7 +188,7 @@ fieldset {
   border-color: #ddd;
 }
 
-.nav > li .active {
+.nav li.active {
   color: #b83997;
 }
 
