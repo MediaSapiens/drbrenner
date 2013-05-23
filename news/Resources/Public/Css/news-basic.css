@@ -78,6 +78,7 @@
 .news .header {
         height: auto;
         width: auto;
+        padding: 0 0 0 0;
 }
 
 .news .footer {
