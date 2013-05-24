@@ -141,7 +141,7 @@ fieldset {
 .lang .drop li{padding: 0 0 16px}
 .lang .drop a:hover{
   text-decoration: none;
-  color: #4364a3;
+  color: #c351a6;
 }
 .nav{
   margin: 0;
@@ -274,10 +274,10 @@ ul.nav li.active ul.drop li.active a.link {
 .aside .box{
   font: 14px 'maven_pro_light300', Arial, Helvetica, sans-serif;
   text-align: center;
-  color: #999;
   background: #eaeaea;
   padding: 20px 5px 25px;
   margin: 0 0 27px;
+  color: #000;
 }
 .aside .box dl{
   margin: 0 auto;
@@ -319,14 +319,14 @@ ul.nav li.active ul.drop li.active a.link {
   font-style: normal;
 }
 .link-back{
-  color: #4364a3;
+  color: #c351a6;
   display: inline-block;
   margin: 0 0 26px 37px;
   font: 14px/24px 'istok_webregular', Arial, Helvetica, sans-serif;
 }
 .news h2{margin: 0 0 17px}
 .news-list p{margin: 0 0 7px}
-.news-list h2 a{color: #4364a3}
+.news-list h2 a{color: #c351a6}
 .news-list h2{margin: 0 0 7px}
 .news-list{margin: 0 0 30px}
 h2{
@@ -444,7 +444,7 @@ h2{
 }
 #datepicker{
   width: 195px;
-  border-color: #4364a3;
+  border-color: #c351a6;
   margin-right: 9px;
 }
 .calendar-img{
