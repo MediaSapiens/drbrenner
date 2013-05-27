@@ -134,7 +134,7 @@ lib.langNavi {
                 #stdWrap.current = 1
                 # Standard-Titel fur den Link ware Seitenttitel
                 # => anderer Text als Link-Text (Optionsschift)
-                stdWrap.override = GERMAN || ENGLISH || RUSSIAN || ARABIC || SPANISH || PORTUGESE
+                stdWrap.override = Deutsch || English || Русский || العربية || Еspañol || Português
                 # Standardma?ige Verlinkung des Menus ausschalten
                 # Da diese sonstige GET-Parameter nicht enthalt
                 doNotLinkIt = 1
