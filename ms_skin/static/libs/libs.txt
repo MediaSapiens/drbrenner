@@ -140,7 +140,7 @@ lib.langNavi {
                 doNotLinkIt = 1
                 # Nun wird der Link mit den aktuellen GET-Parametern neu aufgebaut
                 stdWrap.typolink.parameter.data = page:uid
-                stdWrap.typolink.additionalParams = &L=0 || &L=1 || &L=2 || &L=3 || &L=4 || &L=5
+                stdWrap.typolink.additionalParams = &L=0 || &L=1 || &L=2 || &L=3 || &L=5
                 stdWrap.typolink.addQueryString = 1
                 stdWrap.typolink.addQueryString.exclude = L,id,cHash,no_cache
                 stdWrap.typolink.addQueryString.method = GET
