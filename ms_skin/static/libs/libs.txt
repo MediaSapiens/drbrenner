@@ -120,7 +120,7 @@ lib.langNavi {
     10 = HMENU
     10{
         special = language
-        special.value = 0,1,2,3,4,5
+        special.value = 0,1,2,3,5
         special.normalWhenNoLanguage = 0
         wrap = <ul class="lang pull-right"><li><a href="#" class="showActiveL">EN</a><ul class="drop">|</ul></li></ul>
         1 = TMENU
