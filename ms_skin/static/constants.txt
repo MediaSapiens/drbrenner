@@ -68,14 +68,6 @@ config{
 }
 [global]
 
-[globalVar = GP:L = 4]
-language = en
-config{
-	sys_language_uid = 4
-	locale_all = es_ES.UTF-8
-}
-[global]
-
 [globalVar = GP:L = 5]
 language = pt
 config{
