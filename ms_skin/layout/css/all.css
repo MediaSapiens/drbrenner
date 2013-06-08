@@ -278,6 +278,7 @@ ul.nav li.active ul.drop li.active a.link {
   padding: 20px 5px 25px;
   margin: 0 0 27px;
   color: #000;
+  font-weight: 800;
 }
 .aside .box dl{
   margin: 0 auto;
