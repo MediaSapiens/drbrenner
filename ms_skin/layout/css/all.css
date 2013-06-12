@@ -229,9 +229,10 @@ ul.nav li.active ul.drop li.active a.link {
 .nav .drop li{
   display: inline-block;
   vertical-align: top;
-  padding-right: 5px;
+  padding-right: 15px;
   padding-bottom: 15px;
-  width: 171px;
+  width: 215px;
+  min-height: 50px;
 }
 .nav .drop p{margin: 0 0 14px}
 .nav .drop a{color: #666}
@@ -241,15 +242,19 @@ ul.nav li.active ul.drop li.active a.link {
 }
 .nav .drop li .sdrop {
   padding-left: 15px;
+  min-height: 0px;
 }
 .nav .drop li .sdrop li {
   padding: 0px;
+  min-height: 0px;
 }
 .nav .drop li .sdrop li.active {
   padding: 0px;
+  min-height: 0px;
 }
 .nav .drop li.active .sdrop li {
   padding: 0px;
+  min-height: 0px;
 }
 .nav .drop li.active .sdrop li.active {
   padding: 0px;
