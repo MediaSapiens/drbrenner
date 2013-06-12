@@ -284,7 +284,7 @@ ul.nav li.active ul.drop li.active a.link {
   margin: 0 auto;
   width: 210px;
   text-align: left;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 24px;
   text-transform: uppercase;
 }
@@ -298,7 +298,7 @@ ul.nav li.active ul.drop li.active a.link {
   text-align: left;
   width: 210px;
   margin: 0 auto;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 24px;
   text-transform: uppercase;
 }
