@@ -99,6 +99,13 @@ lib.mainNavi{
     2{
         wrap = <ul class="drop">|</ul>
     }
+    
+    #3 level
+    3 = TMENU
+    3 < lib.mainNavi.2
+    3{
+        wrap = <ul class="sdrop">|</ul>
+    }
 
 }
 
