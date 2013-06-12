@@ -248,6 +248,12 @@ ul.nav li.active ul.drop li.active a.link {
 .nav .drop li .sdrop li.active {
   padding-left: 0px;
 }
+.nav .drop li.active .sdrop li {
+  padding-left: 0px;
+}
+.nav .drop li.active .sdrop li.active {
+  padding-left: 0px;
+}
 .visual{display: block}
 .twocolumns{
   overflow: hidden;
