@@ -243,16 +243,16 @@ ul.nav li.active ul.drop li.active a.link {
   padding-left: 15px;
 }
 .nav .drop li .sdrop li {
-  padding-left: 0px;
+  padding: 0px;
 }
 .nav .drop li .sdrop li.active {
-  padding-left: 0px;
+  padding: 0px;
 }
 .nav .drop li.active .sdrop li {
-  padding-left: 0px;
+  padding: 0px;
 }
 .nav .drop li.active .sdrop li.active {
-  padding-left: 0px;
+  padding: 0px;
 }
 .visual{display: block}
 .twocolumns{
