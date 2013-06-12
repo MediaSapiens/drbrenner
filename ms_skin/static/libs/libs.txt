@@ -69,6 +69,25 @@ lib.mainNavi{
 			ATagParams = class="link"
 			#ATagTitle.field = subtitle // abstract // description // title
 			#doNotLinkIt = 1
+
+
+                #stdWrap.setCurrent = Deutsch || English
+                #stdWrap.current = 1
+                # Standard-Titel fur den Link ware Seitenttitel
+                # => anderer Text als Link-Text (Optionsschift)
+                stdWrap.override = DEUTSCH || ENGLISH || РУССКИЙ || العربية || PORTUGUÊS
+                # Standardma?ige Verlinkung des Menus ausschalten
+                # Da diese sonstige GET-Parameter nicht enthalt
+                doNotLinkIt = 1
+                # Nun wird der Link mit den aktuellen GET-Parametern neu aufgebaut
+                stdWrap.typolink.parameter.data = page:uid
+                stdWrap.typolink.additionalParams = &L=0 || &L=1 || &L=2 || &L=3 || &L=5
+                stdWrap.typolink.addQueryString = 1
+                stdWrap.typolink.addQueryString.exclude = L,id,cHash,no_cache
+                stdWrap.typolink.addQueryString.method = GET
+                stdWrap.typolink.useCacheHash = 0
+                stdWrap.typolink.no_cache = 0
+                stdWrap.typolink.ATagParams = class = ""
 		}
 
 		ACT < .NO
