@@ -232,7 +232,7 @@ ul.nav li.active ul.drop li.active a.link {
   padding-right: 15px;
   padding-bottom: 15px;
   width: 215px;
-  min-height: 50px;
+  min-height: 70px;
 }
 .nav .drop p{margin: 0 0 14px}
 .nav .drop a{color: #666}
