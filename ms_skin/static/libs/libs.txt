@@ -68,11 +68,6 @@ lib.mainNavi{
 			stdWrap.wrap = <span>|</span>
 			ATagParams = class="link"
 			#ATagTitle.field = subtitle // abstract // description // title
-
-                # Standardma?ige Verlinkung des Menus ausschalten
-                # Da diese sonstige GET-Parameter nicht enthalt
-                doNotLinkIt = 1
-                # Nun wird der Link mit den aktuellen GET-Parametern neu aufgebaut
 		}
 
 		ACT < .NO
