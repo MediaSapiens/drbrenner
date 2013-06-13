@@ -14,24 +14,6 @@ styles.content.uploads.filesizeBytesLabels = " | kB| MB| GB"
 
 #extensions
 
-plugin.tx_hypehtml5 {
-	common {
-		enableNormalize = 0
-		enableSelectivizr = 0
-		enableRespondJs = 0
-		enableModernizr = 0
-		includeStylesFirst = 0
-		installChromeFrame = 0
-	}
-
-	clean {
-		removeScriptAttributes = 1
-		removeStyleAttributes = 1
-		removeImageAttributes = 1
-		removeTableAttributes = 1
-	}
-}
-
 #custom
 skin_path = typo3conf/ext/ms_skin/
 
@@ -69,7 +51,7 @@ config{
 [global]
 
 [globalVar = GP:L = 4]
-language = en
+language = es
 config{
 	sys_language_uid = 4
 	locale_all = es_ES.UTF-8
