@@ -120,6 +120,10 @@ fieldset {
   background: #eaeaea;
   border-color: #ddd;
 }
+.lang > li:hover a:lang(ar),
+.lang > li > a:hover:lang(ar) { 
+font-size: 14px;
+}
 .lang > li:hover > a:after,
 .lang > li > a:hover:after{background-position: 0 100%}
 .lang > li:hover .drop{left: 0}
@@ -166,6 +170,9 @@ fieldset {
   top: 50%;
   margin: -4px 0 0;
   background: url(../images/nav-opener.gif) no-repeat;
+}
+.nav > li > a > span:lang(ar) { 
+font-size: 14px;
 }
 .nav > li:hover >a.subcategory:after,
 .nav > li > a..subcategory:hover:after{background-position: 0 100%}
