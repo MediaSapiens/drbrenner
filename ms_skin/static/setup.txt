@@ -1,6 +1,7 @@
 ######## Default page-settings ########
 config {
   extTarget =
+  linkVars = L
   disablePrefixComment = 1
   inlineStyle2TempFile = 1
   moveJsFromHeaderToFooter = 1
@@ -10,6 +11,7 @@ config {
   removeDefaultJS = external
   sys_language_overlay = 1    
   sys_language_uid = {$config.sys_language_uid}
+  sys_language_mode = content_fallback
   htmlTag_setParams = lang="{$language}"
   #{$language}
   baseURL = {$site.siteURL}
