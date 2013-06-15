@@ -292,6 +292,16 @@ ul.nav li.active ul.drop li.active ul.sdrop li.active a.link {
   font: 14px 'maven_pro_light300', Arial, Helvetica, sans-serif;
   padding: 12px 48px 12px 12px;
 }
+.link-type-1:lang(ru){
+  display: inline-block;
+  color: #fff;
+  background: #b83997;
+  text-transform: uppercase;
+  position: relative;
+  padding: 10px;
+  font: 13px 'maven_pro_light300', Arial, Helvetica, sans-serif;
+  padding: 12px 48px 12px 12px;
+}
 .link-type-1:hover{
   text-decoration: none;
   background: #c351a6;
@@ -349,6 +359,10 @@ ul.nav li.active ul.drop li.active ul.sdrop li.active a.link {
 }
 .aside .box dl dd{margin: 0}
 .aside p{margin: 0 0 14px}
+.aside p:lang(ru){
+  margin: 0 0 14px;
+  font-size: 13px;
+}
 .content{
   width: 610px;
   border-left: 1px solid #c8d1d5;
