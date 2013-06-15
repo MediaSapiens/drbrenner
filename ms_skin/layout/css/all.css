@@ -369,9 +369,10 @@ ul.nav li.active ul.drop li.active ul.sdrop li.active a.link {
 .news-list h2{margin: 0 0 7px}
 .news-list{margin: 0 0 30px}
 h2{
-  font: 24px/31px 'maven_pro_light300', Arial, Helvetica, sans-serif;
+  font: 21px/31px 'maven_pro_light300', Arial, Helvetica, sans-serif;
   margin: 0 0 4px;
   color: #333;
+  letter-spacing: -1px;
 }
 .contact-form{
   width: 426px;
