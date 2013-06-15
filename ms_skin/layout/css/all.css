@@ -331,6 +331,13 @@ ul.nav li.active ul.drop li.active ul.sdrop li.active a.link {
   float: left;
   margin: 0 3px 0 0;
 }
+.aside .box dl dt:lang(ru){
+  float: left;
+  margin: 0 3px 0 0;
+  font-weight: 100;
+  letter-spacing: -1px;
+  font-size: 12px;
+}
 .aside .box address{
   font-style: normal;
   text-align: left;
@@ -369,6 +376,11 @@ ul.nav li.active ul.drop li.active ul.sdrop li.active a.link {
 .news-list h2{margin: 0 0 7px}
 .news-list{margin: 0 0 30px}
 h2{
+  font: 24px/31px 'maven_pro_light300', Arial, Helvetica, sans-serif;
+  margin: 0 0 4px;
+  color: #333;
+}
+h2:lang(ru){
   font: 21px/31px 'maven_pro_light300', Arial, Helvetica, sans-serif;
   margin: 0 0 4px;
   color: #333;
