@@ -18,6 +18,9 @@
   font-weight: normal;
   font-style: normal;
 }
+h1:lang(ar), h2:lang(ar), h3:lang(ar), h4:lang(ar), h5:lang(ar), p:lang(ar), span:lang(ar), div:lang(ar) {
+direction: rtl;
+}
 html,body{height: 100%}
 body {
   margin: 0;
