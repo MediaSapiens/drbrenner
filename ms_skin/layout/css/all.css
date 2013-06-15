@@ -174,7 +174,7 @@ font-size: 14px;
   margin: -4px 0 0;
   background: url(../images/nav-opener.gif) no-repeat;
 }
-.nav > li > a > span:lang(ar) { 
+.nav > li > a > span:lang(ar), .nav > li > .drop > li > a > span:lang(ar), .nav > li > .sdrop > li > a > span:lang(ar) { 
 font-size: 14px;
 }
 .nav > li:hover >a.subcategory:after,
@@ -259,6 +259,7 @@ ul.nav li.active ul.drop li.active ul.sdrop li.active a.link {
 }
 .nav .drop li .sdrop {
   padding-left: 15px;
+  padding-right: 15px;
   min-height: 0px;
 }
 .nav .drop li .sdrop li {
@@ -346,7 +347,7 @@ ul.nav li.active ul.drop li.active ul.sdrop li.active a.link {
   border-left: 1px solid #c8d1d5;
   font: 14px/24px 'istok_webregular', Arial, Helvetica, sans-serif;
   color: #666;
-  padding: 6px 0 0 37px;
+  padding: 6px 37px 0 37px;
   overflow: hidden;
 }
 .content p{margin: 0 0 24px}
